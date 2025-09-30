@@ -33,3 +33,17 @@ setPriority(priority) {
 }
 
 // Добавить в module.exports
+this.labels = [];
+
+addLabel(label) {
+    if (label && !this.labels.includes(label)) {
+        this.labels.push(label);
+    }
+}
+this.labels = [];
+
+addLabel(label) {
+    if (label && !this.labels.includes(label)) {
+        this.labels.push(label);
+    }
+}
