@@ -17,3 +17,33 @@ class Task {
 }
 
 module.exports = Task;
+
+
+// В конструктор после this.createdAt
+this.priority = 'medium';
+
+// Новый метод
+setPriority(priority) {
+    const validPriorities = ['low', 'medium', 'high', 'urgent'];
+    if (validPriorities.includes(priority)) {
+        this.priority = priority;
+        return true;
+    }
+    return false;
+}
+
+// Добавить в module.exports
+this.labels = [];
+
+addLabel(label) {
+    if (label && !this.labels.includes(label)) {
+        this.labels.push(label);
+    }
+}
+this.labels = [];
+
+addLabel(label) {
+    if (label && !this.labels.includes(label)) {
+        this.labels.push(label);
+    }
+}
